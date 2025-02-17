@@ -3,49 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My lol</title>
+  <title>Your Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hey, I'm [Your Name]</h1>
+      <p>I enjoy designing tech websites and digital products.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer with expertise in AI, web development, and data science. Welcome to my portfolio!</p>
+    <p>I'm a passionate designer and developer with expertise in creating unique websites and digital experiences. I work with clients all over the world to bring their ideas to life.</p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>AI Chatbot</h3>
-      <p>An interactive chatbot powered by OpenAI's GPT.</p>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Description of the project.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Description of the project.</p>
+      </div>
+      <!-- Add more projects as needed -->
     </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>This very website you're browsing!</p>
-    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>AI/ML</li>
-      <li>Web Development</li>
-    </ul>
-  </section>
-
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contact-form">
@@ -56,15 +52,15 @@
     </form>
   </section>
 
-  <!-- AI Chatbot Section -->
-  <div id="chatbot">
-    <button id="chatbot-toggle">Chat with AI</button>
-    <div id="chatbot-window" class="hidden">
-      <div id="chatbot-messages"></div>
-      <input type="text" id="chatbot-input" placeholder="Type a message...">
-      <button id="chatbot-send">Send</button>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 [Your Name]. Made with ❤️ using Webflow.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
-  </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
