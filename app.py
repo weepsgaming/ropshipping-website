@@ -1,9 +1,12 @@
-# app.py
 from flask import Flask, request, jsonify, send_file
 from image_generator import generate_image
 import io
 
 app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Image Generation AI is running! Use the /generate endpoint to create images."
 
 @app.route("/generate", methods=["POST"])
 def generate():
@@ -23,4 +26,4 @@ def generate():
     return send_file(img_io, mimetype="image/png")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)  # Use port 8080 for Codespaces
+    app.run(host="0.0.0.0", port=8080)
