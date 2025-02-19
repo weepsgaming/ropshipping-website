@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Image Generator</title>
+</head>
+<body>
+    <h1>Generate or Modify Images</h1>
+    <form action="/generate" method="post">
+        <input type="text" name="prompt" placeholder="Enter a prompt...">
+        <button type="submit">Generate Image</button>
+    </form>
+    <hr>
+    <form action="/modify" method="post" enctype="multipart/form-data">
+        <input type="text" name="prompt" placeholder="Enter modification prompt...">
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Modify Image</button>
+    </form>
+</body>
+</html>
